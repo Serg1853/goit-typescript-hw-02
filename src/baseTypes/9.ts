@@ -1,7 +1,7 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
-type UserPage = {
+interface Page {
   title: string;
   likes: number;
   accounts: string[];
@@ -10,7 +10,7 @@ type UserPage = {
     createAt: Date;
     updateAt: Date;
   };
-};
+}
 
 const page1 = {
   title: "The awesome page",
