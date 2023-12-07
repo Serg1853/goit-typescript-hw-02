@@ -4,7 +4,8 @@
 */
 
 function merge<T, U>(objA: T, objB: U): T & U {
-  return { ...objA, ...objB };
+  return <T & U>{ ...objA, ...objB };
 }
 
 export {};
+console.log(merge<string, string>("1234", "qwerty"));
